@@ -36,6 +36,7 @@ gem 'font-awesome-rails'
 gem 'bcrypt', '~> 3.1', '>= 3.1.11'
 gem 'nokogiri'
 # gem 'sqlite3'
+gem 'pg'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
