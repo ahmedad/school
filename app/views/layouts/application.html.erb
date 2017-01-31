@@ -22,12 +22,12 @@
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
 									</button>
-									<a class="navbar-brand" href="#"><i class="img"><%= image_tag("logo.png") %></i>  Al-amin Integ<span>rated Academy</span></a>
+									<a class="navbar-brand" href="#"><i class="img"><%= image_tag("logo.png") %></i> </a><a style="font-size: 2rem;">Al-amin Integ<span>rated Academy</span></a>
 								</div>
 
 								<!-- Collect the nav links, forms, and other content for toggling -->
 								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-									<ul class="nav navbar-nav navbar-right" style="margin-top: 2rem;" >
+									<ul class="nav navbar-nav navbar-right" style="margin-top: 1rem;" >
 										<li class="<%= params[:controller] == 'Home' ? 'active' : '' %>" ><%= link_to "Home", root_path %> </li>
 										<li class="<%= params[:controller] == 'About' ? 'active' : '' %>"><%= link_to "About Us", about_path %></li>
 										<li class="<%= params[:controller] == 'Contact' ? 'active' : '' %>"><%= link_to "Contact", contact_path %></li>
