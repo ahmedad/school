@@ -1,0 +1,7 @@
+<div class="well single-post">
+	<h2 class="page-header"><%= @post.title %></h2>
+	<small>post by <%= @post.user.name %> on <%= @post.created_at.to_time.strftime('%B %e at %l: %M %p') %></small>
+	<%= image_tag @post.image.url, width: '100%'%>
+	<%= raw @post.body %>
+</div>
+<%= render 'partials/comments' %>

@@ -1,0 +1,45 @@
+body {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #36424a;
+	color: #fff;
+}
+input {
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 0;
+}
+.btn {
+	border: none;
+	border-radius: 0;
+	&:hover {
+		background: #ccc;
+		color: #666;
+	}
+}
+.btn-primary {
+	background: #ff953f;
+}
+.form-signin {
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+	.form-signin-heading {
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	.checkbox {
+		margin-bottom: 10px;
+		text-align: center;
+		font-weight: normal;
+	}
+	.form-control {
+		position: relative;
+		height: auto;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 10px;
+		font-size: 16px;
+	}
+}

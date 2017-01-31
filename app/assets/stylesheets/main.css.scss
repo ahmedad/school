@@ -1,0 +1,32 @@
+.col-md-10 li{
+	font-weight: 200;
+	font-size: 2rem
+}
+
+.col-md-10 tagline{
+	font-weight: 200;
+	font-size: 2rem
+}
+
+img {
+  margin-top: -4rem;
+  height: 11rem;
+  width: 14rem;
+}
+
+.img-full img {
+  height: 100%;
+  width: 100%;
+}
+
+.navbar {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: #ddd6f3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ddd6f3 , #faaca8); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ddd6f3 , #faaca8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar-right {
+  margin-top: 2rem;
+}

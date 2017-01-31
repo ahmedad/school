@@ -1,0 +1,204 @@
+<!-- HOME -->
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <div id="carousel-example-generic" class="carousel slide">
+                <!-- Indicators -->
+                <ol class="carousel-indicators hidden-xs">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                    	<div class="img-full">
+                        	<%= image_tag('img1.jpg') %>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-full">
+                        	<%= image_tag('img2.jpg') %>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-full">
+                        	<%= image_tag('img3.jpg') %>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <span class="icon-prev"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                    <span class="icon-next"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+		<!-- END HOME -->
+	    <!-- NEWS -->
+		<section class="news">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 text-center">
+						<h1>Stay Update for Our School news</h1><div class="border center-block"></div>
+					</div>
+				</div>	
+			</div>	
+
+        <div class="item">
+		    <div class="container">
+				<%if @posts.exists? %>
+					<% @posts.each_slice(3) do |post| %>
+					<div class="row">
+						<% @posts.each do |post| %>
+						<div class="col-md-4 col-sm-6">
+							<div class="post">
+								<div class="news-thumb">
+									<%= image_tag post.image.url, width: '100%'%>
+									<div class="news-overlay"><i class="fa fa-link"></i></div>
+								</div>	
+								<div class="post-content">
+									<h4 class="media-heading"><%= post.title %></h4>
+									<small>post by <%= post.user.name %> on <%= post.created_at.to_time.strftime('%B %e at %l: %M %p') %></small>
+									<%= raw post.body.truncate(200) %>
+									<%= link_to 'Read More', post_path(post), class: 'btn btn-primary' %>
+							 	</div>
+							  </div>
+						    </div>
+						   <% end %>
+						  </div>
+						  <% end %>
+						<% else %>
+						<p></p>
+					<% end %>
+			</div>
+	     </div><!---->
+		</section>
+		<!-- END NEWS -->
+		<!-- HIGHLIGHT -->
+		<section class="highlight">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<div class="highlight-text center-block">
+							<h1>Al-amin Academy is an <span>effortlessly</span>, authentic handcrapted design that suitable for any student</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END HIGHTLIGHT -->
+	<!-- FEATURE PROJECT -->
+		<section class="feature-project">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 text-center">
+						<h1>School Gallery</h1><div class="border center-block"></div>
+						<p class="tagline">We love sharing with you this moments</p>
+					</div>
+				</div>	
+			</div>	
+			
+			<div id="feature-project" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+						<li data-target="#feature-project" data-slide-to="0" class="active"><button class="btn btn-primary"><i class="fa fa-arrow-left"></i></button></li>
+						<li data-target="#feature-project" data-slide-to="1"><button class="btn btn-primary"><i class="fa fa-arrow-right"></i></button></li>
+					</ol>	
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<div class="container-fluid">
+							<div class="row p-y-0">
+								<div class="col-md-3 col-sm-6 p-x-0 ">
+									<div class="project-img"> 
+										<%= image_tag('img4.jpg') %>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 p-x-0">
+									<div class="project-img"> 
+										<%= image_tag('img5.jpg') %>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 p-x-0">
+									<div class="project-img"> 
+										<%= image_tag('img6.jpg') %>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 p-x-0">
+									<div class="project-img"> 
+										<%= image_tag('img7.jpg') %>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="container-fluid">
+							<div class="row p-y-0">
+								<div class="col-md-3 col-sm-6 p-x-0 ">
+									<div class="project-img"> 
+										<%= image_tag('img8.jpg') %>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 p-x-0">
+									<div class="project-img"> 
+										<%= image_tag('img9.jpg') %>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 p-x-0">
+									<div class="project-img"> 
+										<%= image_tag('img10.jpg') %>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 p-x-0">
+									<div class="project-img"> 
+										<%= image_tag('img8.jpg') %>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END FEATURE PROJECT -->
+		<!-- SUPPORTER -->
+		<section class="supporter">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<div id="supporter-showcase" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#supporter-showcase" data-slide-to="0" class="active"></li>
+								<li data-target="#supporter-showcase" data-slide-to="1"></li>
+								<li data-target="#supporter-showcase" data-slide-to="2"></li>
+								
+							</ol>
+							<div class="carousel-inner text-center" role="listbox">
+								<div class="item active">
+								<div class="supporter-name">Motto</div>
+									<p>Education Is Light</p>
+								</div>
+								<div class="item">
+								<div class="supporter-name">Mission</div>
+									<p>To serve as a centre of accademically talented and holistic pupils based on strong principles</p>
+								</div>
+								<div class="item">
+									<div class="supporter-name">Vission</div>
+									<p>Centre of excellence, effectively providing quality academics and leadership skills</p>
+								</div>
+								<a class="carousel-slide prev-slide" href="#supporter-showcase" role="button" data-slide="prev">
+									<span><i class="fa fa-angle-left"></i></span>
+								</a>
+								<a class="carousel-slide next-slide" href="#supporter-showcase" role="button" data-slide="next">
+									<span><i class="fa fa-angle-right"></i></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END SUPPORTER -->

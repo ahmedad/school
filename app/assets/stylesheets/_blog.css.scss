@@ -1,0 +1,130 @@
+/* SINGLE PAGE */
+/* EMEMENTS */
+.blog {
+	margin-bottom: 40px;
+	.thumbnail {
+		padding: 0;
+		border: none;
+		margin-bottom: 30px;
+		background-color: #f0f0f0;
+		border-radius: 0;
+		img {
+			border-bottom: 2px solid #2796de;
+		}
+		.caption {
+			.btn.btn-primary {
+				border-radius: 2px;
+				border-color: transparent;
+				background-color: #2796de;
+			}
+			padding: 30px 20px;
+			h3 {
+				margin-top: 0;
+				font-size: 22px;
+				line-height: 1.2;
+			}
+			p {
+				margin-bottom: 15px;
+			}
+		}
+	}
+	.options {
+		margin-bottom: 10px;
+		a {
+			color: #999;
+			font-family: "Times New Roman";
+			font-size: 13px;
+			font-style: oblique;
+			letter-spacing: 1px;
+			margin-right: 5px;
+			text-decoration: none;
+			text-transform: capitalize;
+			.fa {
+				color: #2796de;
+				margin-right: 2px;
+			}
+		}
+	}
+	.pagination {
+		li {
+			a {
+				color: #999;
+			}
+		}
+		li.active {
+			a {
+				color: #fff;
+				background-color: #2796de;
+				border-color: #2796de;
+			}
+		}
+	}
+}
+.single-detail {
+	h1 {
+		font-size: 30px;
+		line-height: 1.4;
+		margin-bottom: 50px;
+	}
+	h2 {
+		margin-bottom: 10px;
+		font-size: 22px;
+	}
+	img {
+		margin-bottom: 30px;
+		border-bottom: 2px solid #2796de;
+	}
+	blockquote {
+		font-family: 'Times New Roman';
+		border-left: 5px solid #2796de;
+		font-size: 15px !important;
+		font-style: oblique;
+		margin: 20px 0 20px 15px;
+		padding: 10px 20px;
+	}
+}
+.single-deltail {
+	p {
+		font-size: 10px;
+		margin-bottom: 20px;
+	}
+}
+.comments {
+	margin-bottom: 50px;
+	margin-top: 40px;
+	h2 {
+		color: #999;
+		margin-bottom: 30px;
+		padding-top: 20px;
+		border-top: 1px dashed #999;
+		text-transform: capitalize;
+	}
+	.media {
+		margin-top: 0;
+	}
+	.media-left {
+		padding-top: 6px;
+		padding-right: 20px;
+	}
+	.media-body {
+		p {
+			margin-bottom: 25px;
+		}
+		h3 {
+			font-size: 20px;
+			color: #777;
+		}
+	}
+}
+.btn-source {
+	display: none;
+}
+.elements {
+	margin-bottom: 50px;
+	h1 {
+		color: #999;
+		margin-top: 35px;
+		margin-bottom: 20px;
+		text-transform: capitalize;
+	}
+}

@@ -1,0 +1,19 @@
+<%= form_tag admin_sessions_path, class: 'form-signing' do %>
+<h2 class="form-signing-heading">Sitra Login</h2>
+
+<% if flash[:notice] %>
+<div class="alert alert-success"><%= flash[:notice] %></div>
+<% end %>
+
+<% if flash[:alert] %>
+<div class="alert alert-danger"><%= flash[:alert] %></div>
+<% end %>
+
+<%= text_field_tag :email, params[:email], class: 'form-control', placeholder:'Email Address' %>
+<%= password_field_tag :password, '', class: 'form-control', placeholder:'Password' %>
+
+<%= submit_tag 'Login', class: 'btn btn-md btn-primary btn-block' %>
+
+<% end %>
+
+
